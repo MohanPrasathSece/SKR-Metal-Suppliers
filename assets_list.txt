@@ -1,0 +1,19 @@
+ Volume in drive D is New Volume
+ Volume Serial Number is 8695-CDB9
+
+ Directory of D:\SKR Metal Suppliers\skr-metal-focus-main\src\assets
+
+29-01-2026  19:19    <DIR>          .
+29-01-2026  16:00    <DIR>          ..
+29-01-2026  15:59         1,066,741 bitumen-front.png
+29-01-2026  15:59           986,471 bitumen-side.png
+29-01-2026  15:56         1,164,869 bitumen.png
+29-01-2026  15:45           403,996 hero-warehouse.jpg
+28-01-2026  22:29           175,511 skr_logo-removebg-preview.png
+29-01-2026  16:05         1,440,328 umbrella bottom.png
+29-01-2026  19:17         1,414,421 umbrella side.png
+29-01-2026  19:07         1,414,421 umbrella washer side.png
+29-01-2026  16:04         1,356,250 umbrella-front.png
+29-01-2026  15:51         1,257,148 umbrella.png
+              10 File(s)     10,680,156 bytes
+               2 Dir(s)  138,503,122,944 bytes free
