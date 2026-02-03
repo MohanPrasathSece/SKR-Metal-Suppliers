@@ -60,16 +60,6 @@ const Footer = () => {
             </div>
           </div>
 
-
-          {/* Resources */}
-          <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Resources</h4>
-            <div className="flex flex-col gap-3">
-              <Link to="/guide/choosing-metal-washers" className="text-sm text-white/80 hover:text-white transition-colors">Washer Selection Guide</Link>
-              <Link to="/guide/washer-installation-mistakes" className="text-sm text-white/80 hover:text-white transition-colors">Installation Mistakes</Link>
-              <Link to="/guide/roofing-washer-failure-signs" className="text-sm text-white/80 hover:text-white transition-colors">Failure Signs Guide</Link>
-            </div>
-          </div>
           {/* Contact Info */}
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Contact Us</h4>
