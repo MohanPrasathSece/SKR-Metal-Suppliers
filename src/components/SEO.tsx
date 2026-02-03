@@ -24,8 +24,18 @@ const SEO = ({
         : SEO_CONFIG.defaultTitle;
 
     const metaDescription = description || SEO_CONFIG.defaultDescription;
-    const canonicalUrl = canonical ? `${SEO_CONFIG.siteUrl}${canonical}` : SEO_CONFIG.siteUrl;
-    const ogImage = image || `${SEO_CONFIG.siteUrl}/og-image.jpg`; // Fallback
+
+    // Backend SEO: Canonical URL cleanup (remove trailing slash, strip parameters)
+    const cleanCanonical = canonical?.replace(/\/$/, '') || '/';
+    const canonicalUrl = `${SEO_CONFIG.siteUrl}${cleanCanonical}`.split('?')[0];
+
+    const ogImage = image || `${SEO_CONFIG.siteUrl}/skr-logo.png`;
+
+    // Determine robots directives based on page type
+    const isGuidePage = canonical?.startsWith('/guide');
+    const robotsContent = isGuidePage
+        ? "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        : "index, follow";
 
     // Base Schema (Organization + WebSite)
     const baseSchema = [
@@ -49,7 +59,7 @@ const SEO = ({
                 "@type": "ContactPoint",
                 "telephone": SEO_CONFIG.phone,
                 "contactType": "sales",
-                "areaServed": ["IN", "AE", "SA"], // Keeping international potential open
+                "areaServed": ["IN"],
                 "availableLanguage": "en"
             },
             "address": {
@@ -119,12 +129,16 @@ const SEO = ({
 
     return (
         <Helmet>
+            {/* Resource Hints for Performance */}
+            <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
             {/* Standard Meta Tags */}
             <title>{siteTitle}</title>
             <meta name="description" content={metaDescription} />
-            <meta name="keywords" content={SEO_CONFIG.powerKeywords.join(", ")} />
             <link rel="canonical" href={canonicalUrl} />
-            <meta name="robots" content="index, follow" />
+            <meta name="robots" content={robotsContent} />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content={type} />

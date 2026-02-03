@@ -1,27 +1,38 @@
 User-agent: *
 Allow: /
-
-# Aggressive crawl directives for maximum index frequency
 Crawl-delay: 0
 
-# Priority pages
+# STRATEGIC PRIORITY - Guide Googlebot to authority content
+Allow: /guide/*
 Allow: /products
+Allow: /about
 Allow: /contact
 Allow: /delivery
-Allow: /about
 
-# Sitemap
-Sitemap: https://www.skrmetalsuppliers.in/sitemap.xml
-
-# Block duplicate content paths (if any future routes)
+# Block non-indexable administrative paths
 Disallow: /admin
 Disallow: /api
 Disallow: /*.json$
 
-# Allow all assets for full page rendering
-Allow: /assets/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.webp$
+# Block tracking parameter URLs (prevent duplicate indexing)
+Disallow: /*?*utm_
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
+Disallow: /*?*ref=
+
+# Block development artifacts
+Disallow: /assets/*.map$
+Disallow: /.well-known/
+Disallow: /node_modules/
+
+# Allow critical assets for rendering
+Allow: /assets/*.css$
+Allow: /assets/*.js$
+Allow: /assets/*.png$
+Allow: /assets/*.jpg$
+Allow: /assets/*.webp$
+Allow: /assets/*.svg$
+Allow: /assets/*.woff2$
+
+# Sitemap location
+Sitemap: https://www.skrmetalsuppliers.in/sitemap.xml
