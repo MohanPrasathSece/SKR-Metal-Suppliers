@@ -10,9 +10,9 @@ import About from "./pages/About";
 import Products from "./pages/Products";
 import Delivery from "./pages/Delivery";
 import Contact from "./pages/Contact";
-import WasherGuide from "./pages/WasherGuide";
-import InstallationMistakes from "./pages/InstallationMistakes";
-import WasherFailureSigns from "./pages/WasherFailureSigns";
+import ChoosingMetalWashers from "./pages/guides/ChoosingMetalWashers";
+import WasherInstallationMistakes from "./pages/guides/WasherInstallationMistakes";
+import WasherFailureSignsGuide from "./pages/guides/WasherFailureSigns";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,9 +31,9 @@ const App = () => (
             <Route path="/products" element={<Products />} />
             <Route path="/delivery" element={<Delivery />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/guide/choosing-metal-washers" element={<WasherGuide />} />
-            <Route path="/guide/washer-installation-mistakes" element={<InstallationMistakes />} />
-            <Route path="/guide/roofing-washer-failure-signs" element={<WasherFailureSigns />} />
+            <Route path="/guide/choosing-metal-washers" element={<ChoosingMetalWashers />} />
+            <Route path="/guide/washer-installation-mistakes" element={<WasherInstallationMistakes />} />
+            <Route path="/guide/roofing-washer-failure-signs" element={<WasherFailureSignsGuide />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
