@@ -11,10 +11,62 @@ import Layout from "@/components/Layout";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import umbrellaWashers from "@/assets/umbrella-front-removebg-preview.png";
 import bitumenWashers from "@/assets/bitumen-front-removebg-preview.png";
+import SEO from "@/components/SEO";
 
 const Home = () => {
+    const homeSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "Product",
+                    "name": "Industrial Umbrella Washers",
+                    "description": "High-quality metal umbrella washers for industrial roofing applications.",
+                    "image": umbrellaWashers,
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "SKR"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "IN"
+                    }
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "Product",
+                    "name": "Bitumen Washers",
+                    "description": "Weather-resistant bitumen washers for confident roofing and sealing.",
+                    "image": bitumenWashers,
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "SKR"
+                    },
+                    "offers": {
+                        "@type": "Offer",
+                        "availability": "https://schema.org/InStock",
+                        "areaServed": "IN"
+                    }
+                }
+            }
+        ]
+    };
+
     return (
         <Layout>
+            <SEO
+                title="Premium Metal Washers Manufacturer in Coimbatore"
+                description="SKR Metal Suppliers: Leading manufacturer & wholesaler of Umbrella Washers, Bitumen Washers, and Industrial Metal Washers in Coimbatore. Best Quality & Price in Tamil Nadu."
+                canonical="/"
+                schema={homeSchema}
+            />
             {/* Hero Section - White & Navy */}
             <section className="bg-white">
                 <div className="container-section py-12 md:py-20">
