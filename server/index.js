@@ -14,11 +14,20 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Middleware
+import compression from 'compression';
+
+// ... other imports
+
+// Middleware
 app.use(cors());
+app.use(compression()); // Enable Gzip compression
 app.use(express.json());
 
-// Serve static files from the React app build
-app.use(express.static(path.join(__dirname, '../dist')));
+// Serve static files from the React app build with caching
+app.use(express.static(path.join(__dirname, '../dist'), {
+    maxAge: '1y',
+    etag: false
+}));
 
 // Verify SMTP Connection
 const transporter = nodemailer.createTransport({

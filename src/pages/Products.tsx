@@ -18,8 +18,8 @@ const Products = () => {
   return (
     <Layout>
       <SEO
-        title="Industrial Metal Washers Product Catalog | Umbrella & Bitumen Washers"
-        description="Browse our range of Industrial Umbrella Washers and Bitumen Washers. Heavy-duty, corrosion-resistant, and weather-proof solutions for roofing and construction."
+        title="Buy Umbrella & Bitumen Washers Online | Industrial Metal Washer Catalog Coimbatore"
+        description="⚙️ Complete Industrial Washer Catalog ✓ Umbrella Washers (GI/SS) ✓ Bitumen Washers ✓ Bonded Washers ✓ Custom Sizes Available ✓ Wholesale Rates for Contractors, Builders & Manufacturers | COD, Bulk Orders, Same-Day Dispatch Coimbatore"
         canonical="/products"
         type="product"
         schema={{

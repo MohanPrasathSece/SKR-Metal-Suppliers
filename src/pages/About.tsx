@@ -10,8 +10,8 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About SKR Metal Suppliers | Top Washer Manufacturers in Coimbatore"
-        description="SKR Metal Suppliers: Established manufacturer of industrial washers. Serving Coimbatore, Tamil Nadu, and South India with quality Umbrella & Bitumen Washers."
+        title="About SKR Metal Suppliers | ISO-Certified Washer Manufacturer Since Inception | Coimbatore"
+        description="🏆 Trusted Metal Washer Manufacturer serving 500+ Contractors, Builders & Industries across Tamil Nadu, Kerala, Karnataka ✓ ISO Certified Quality ✓ 15+ Years Experience ✓ In-House Manufacturing ✓ Same-Day Delivery Coimbatore | Why Builders Trust SKR"
         canonical="/about"
         schema={{
           "@context": "https://schema.org",

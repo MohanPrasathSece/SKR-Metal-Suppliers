@@ -130,8 +130,8 @@ const Home = () => {
     return (
         <Layout>
             <SEO
-                title="Premium Metal Washers Manufacturer in Coimbatore"
-                description="SKR Metal Suppliers: Leading manufacturer & wholesaler of Umbrella Washers, Bitumen Washers, and Industrial Metal Washers in Coimbatore. Best Quality & Price in Tamil Nadu."
+                title="Premium Metal Washers Manufacturer in Coimbatore | Umbrella & Bitumen Washer Supplier"
+                description="🏭 Trusted Umbrella Washer & Bitumen Washer Manufacturer in Coimbatore ✓ ISO Certified ✓ Same-Day Delivery ✓ Bulk Wholesale Rates ✓ GI/SS Washers for Roofing, Construction & Industrial Projects | Free Quote: 9025421149"
                 canonical="/"
                 schema={homeSchema}
             />
@@ -196,7 +196,7 @@ const Home = () => {
                                 <div className="aspect-[4/3] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
                                     <img
                                         src={heroImage}
-                                        alt="Industrial warehouse with metal washers"
+                                        alt="Premium ISO-certified metal washer manufacturer warehouse in Coimbatore Tamil Nadu - SKR Metal Suppliers industrial-grade umbrella and bitumen washers for roofing construction projects"
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
@@ -269,7 +269,7 @@ const Home = () => {
                             <div className="aspect-video overflow-hidden bg-gray-50 p-2">
                                 <img
                                     src={umbrellaWashers}
-                                    alt="Best Industrial Umbrella Washers in Coimbatore Tamil Nadu"
+                                    alt="Heavy-duty galvanized iron GI stainless steel SS umbrella washers manufacturer Coimbatore - Best quality metal roofing fasteners for corrugated sheet profiled cladding industrial construction bulk wholesale supplier Tamil Nadu"
                                     className="w-full h-full object-contain scale-150 group-hover:scale-[1.65] transition-transform duration-500"
                                 />
                             </div>
@@ -292,7 +292,7 @@ const Home = () => {
                             <div className="aspect-video overflow-hidden bg-gray-50 p-2">
                                 <img
                                     src={bitumenWashers}
-                                    alt="Premium Bitumen Washers Manufacturer in Coimbatore India"
+                                    alt="Weather-resistant bitumen bonded EPDM rubber sealing washers Coimbatore manufacturer - Waterproof metal roofing washers for leak-proof installation industrial projects commercial buildings Tamil Nadu Kerala Karnataka supplier"
                                     className="w-full h-full object-contain scale-150 group-hover:scale-[1.65] transition-transform duration-500"
                                 />
                             </div>

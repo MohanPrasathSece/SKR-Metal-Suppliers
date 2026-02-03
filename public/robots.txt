@@ -1,3 +1,27 @@
 User-agent: *
 Allow: /
+
+# Aggressive crawl directives for maximum index frequency
+Crawl-delay: 0
+
+# Priority pages
+Allow: /products
+Allow: /contact
+Allow: /delivery
+Allow: /about
+
+# Sitemap
 Sitemap: https://www.skrmetalsuppliers.in/sitemap.xml
+
+# Block duplicate content paths (if any future routes)
+Disallow: /admin
+Disallow: /api
+Disallow: /*.json$
+
+# Allow all assets for full page rendering
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.webp$

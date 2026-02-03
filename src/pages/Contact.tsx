@@ -91,8 +91,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact SKR Metal Suppliers | Buy Industrial Washers in Coimbatore"
-        description="Get in touch with SKR Metal Suppliers for bulk orders of Umbrella Washers, Bitumen Washers, and Industrial Metal Washers. Located in Ondipudur, Coimbatore."
+        title="Contact Metal Washer Supplier Coimbatore | Get Instant Quote | Call 9025421149 Now"
+        description="💬 Get FREE Quote in 10 Minutes ✓ Call/WhatsApp: 9025421149 ✓ Visit Factory: Ondipudur, Coimbatore ✓ Email: skrmetalsuppliers@gmail.com ✓ Speak to Washer Expert Now ✓ Same-Day Response Guaranteed | Bulk Orders Welcome"
         canonical="/contact"
         schema={{
           "@context": "https://schema.org",

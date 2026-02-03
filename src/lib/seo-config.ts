@@ -34,15 +34,65 @@ export const SEO_CONFIG = {
         "Coimbatore", "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana", "Chennai", "Bangalore", "Kochi", "Madurai", "Salem", "Tirupur", "Erode", "Trichy"
     ],
     powerKeywords: [
-        "Umbrella Washers Manufacturer",
-        "Bitumen Washers Supplier",
-        "Industrial Washers Coimbatore",
-        "Roofing Washers Tamil Nadu",
-        "Metal Washers Wholesale India",
-        "GI Washers Manufacturer",
-        "SS Washers Supplier South India",
-        "Bonded Washers Manufacturer",
-        "EPDM Washers Coimbatore",
-        "Nut Bolt Washer Supplier"
+        // Primary Money Keywords
+        "Umbrella Washers Manufacturer Coimbatore",
+        "Bitumen Washers Supplier Tamil Nadu",
+        "Industrial Washers Bulk Wholesale India",
+
+        // Material-Specific Long-Tail
+        "Galvanized Iron GI Umbrella Washers",
+        "Stainless Steel SS Washers Supplier",
+        "EPDM Bonded Sealing Washers",
+        "Rubber Bitumen Washers Price",
+
+        // Application-Specific Buyer Intent
+        "Roofing Sheet Fasteners Coimbatore",
+        "Corrugated Metal Roofing Washers",
+        "Profiled Sheet Cladding Washers",
+        "Industrial Construction Fasteners",
+        "Metal Shed Roofing Washers",
+
+        // Commercial Intent Keywords
+        "Buy Umbrella Washers Online India",
+        "Wholesale Metal Washer Distributor",
+        "Bulk Order Industrial Washers",
+        "Metal Washer Manufacturer Near Me",
+        "Same Day Delivery Washers Coimbatore",
+
+        // Location-Proximity Keywords
+        "Umbrella Washers Ondipudur",
+        "Metal Washer Supplier Coimbatore South",
+        "Industrial Washers Tamil Nadu",
+        "Roofing Washers Kerala Karnataka",
+
+        // Problem-Solution Keywords
+        "Leak-Proof Roofing Washers",
+        "Waterproof Bitumen Sealing Washers",
+        "Corrosion Resistant Metal Washers",
+        "Weather-Proof Roofing Fasteners",
+
+        // Industry-Specific
+        "Contractor Metal Washer Supplier",
+        "Builder Bulk Washer Distributor",
+        "Solar Panel Mounting Washers",
+        "Agricultural Shed Roofing Washers",
+
+        // Technical Specification Keywords
+        "Custom Size Metal Washers",
+        "Heavy Duty Industrial Washers",
+        "ISO Certified Washer Manufacturer",
+        "Quality Metal Fasteners India",
+
+        // Competitive Keywords
+        "Best Price Umbrella Washers",
+        "Trusted Metal Washer Supplier",
+        "Top Quality Industrial Washers",
+        "Reliable Bulk Washer Distributor",
+
+        // Voice Search / Natural Language
+        "where to buy umbrella washers in coimbatore",
+        "metal washer supplier near ondipudur",
+        "bulk order industrial washers tamil nadu",
+        "umbrella washer manufacturer contact number"
     ]
 };

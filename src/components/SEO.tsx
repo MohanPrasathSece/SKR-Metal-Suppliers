@@ -85,7 +85,30 @@ const SEO = ({
                 "@type": "Thing",
                 "name": "Industrial Washers",
                 "sameAs": SEO_CONFIG.entities.washer
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": `${SEO_CONFIG.siteUrl}/?s={search_term_string}`,
+                "query-input": "required name=search_term_string"
             }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": SEO_CONFIG.siteUrl
+                },
+                ...(canonical && canonical !== '/' ? [{
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": title || "Page",
+                    "item": canonicalUrl
+                }] : [])
+            ]
         }
     ];
 
