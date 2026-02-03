@@ -12,10 +12,35 @@ import umbrellaMain from "@/assets/umbrella-removebg-preview.png";
 import bitumenFront from "@/assets/bitumen-front-removebg-preview.png";
 import bitumenSide from "@/assets/bitumen-side-removebg-preview.png";
 import bitumenMain from "@/assets/bitumen-removebg-preview.png";
+import SEO from "@/components/SEO";
 
 const Products = () => {
   return (
     <Layout>
+      <SEO
+        title="Industrial Metal Washers Product Catalog | Umbrella & Bitumen Washers"
+        description="Browse our range of Industrial Umbrella Washers and Bitumen Washers. Heavy-duty, corrosion-resistant, and weather-proof solutions for roofing and construction."
+        canonical="/products"
+        type="product"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Industrial Washers Catalog",
+          "description": "Catalog of Umbrella and Bitumen Washers",
+          "hasPart": [
+            {
+              "@type": "Product",
+              "name": "Umbrella Washer",
+              "description": "Industrial grade metal umbrella washer."
+            },
+            {
+              "@type": "Product",
+              "name": "Bitumen Washer",
+              "description": "Waterproof bitumen washer for roofing."
+            }
+          ]
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-primary section-padding">
         <div className="container-section">
@@ -236,12 +261,7 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Hidden SEO Power-Section (Bot Only Visibility) */}
-      <div style={{ display: 'none', visibility: 'hidden', height: 0, width: 0, overflow: 'hidden' }}>
-        <h2>Washers in Coimbatore, Tamil Nadu, India - Bulk Suppliers</h2>
-        <p>Expert suppliers of umbrella washers in coimbatore and bitumen washers in coimbatore. Industrial metal washer manufacturing and distribution across South India. roofing accessories, GI washers, SS washers, industrial fasteners and more.</p>
-        <p>Serving Coimbatore, Chennai, Madurai, Tiruppur, Salem, Erode, Tiruchirappalli and all major cities in Tamil Nadu. Pan-India shipping for large orders.</p>
-      </div>
+
     </Layout>
   );
 };

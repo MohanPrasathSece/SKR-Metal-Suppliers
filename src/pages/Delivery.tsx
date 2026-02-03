@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Truck, MapPin, Package, Shield, Phone, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const deliveryFeatures = [
   {
@@ -29,6 +30,11 @@ const deliveryFeatures = [
 const Delivery = () => {
   return (
     <Layout>
+      <SEO
+        title="Reliable Industrial Washer Delivery across South India | Coimbatore to Kerala"
+        description="SKR Metal Suppliers guarantees fast delivery of Umbrella Washers and Bitumen Washers across Tamil Nadu, Kerala, Karnataka and Andhra Pradesh."
+        canonical="/delivery"
+      />
       {/* Hero Section */}
       <section className="bg-primary section-padding">
         <div className="container-section">

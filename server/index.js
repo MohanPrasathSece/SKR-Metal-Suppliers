@@ -73,7 +73,7 @@ ${message}
                     <p style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">Message:</p>
                     <p style="font-size: 16px; white-space: pre-wrap;">${message}</p>
                 </div>
-                <p style="font-size: 12px; color: #888; margin-top: 30px; text-align: center;">This email was sent from the contact form on skrmetalsuppliers.com</p>
+                <p style="font-size: 12px; color: #888; margin-top: 30px; text-align: center;">This email was sent from the contact form on skrmetalsuppliers.in</p>
             </div>
         `,
     };
@@ -87,12 +87,58 @@ ${message}
     }
 });
 
+// SEO Routes
+app.get('/sitemap.xml', (req, res) => {
+    const baseUrl = 'https://www.skrmetalsuppliers.in';
+    const routes = [
+        '/',
+        '/about',
+        '/products',
+        '/delivery',
+        '/contact'
+    ];
+
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${routes.map(route => `
+    <url>
+        <loc>${baseUrl}${route}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>${route === '/' ? 'daily' : 'weekly'}</changefreq>
+        <priority>${route === '/' ? '1.0' : '0.8'}</priority>
+    </url>
+    `).join('')}
+</urlset>`;
+
+    res.header('Content-Type', 'application/xml');
+    res.send(sitemap);
+});
+
+app.get('/robots.txt', (req, res) => {
+    const robots = `User-agent: *
+Allow: /
+Sitemap: https://www.skrmetalsuppliers.in/sitemap.xml`;
+    res.header('Content-Type', 'text/plain');
+    res.send(robots);
+});
+
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+const startServer = (initialPort) => {
+    const server = app.listen(initialPort, () => {
+        console.log(`Server running on port ${initialPort}`);
+    }).on('error', (err) => {
+        if (err.code === 'EADDRINUSE') {
+            console.log(`Port ${initialPort} is busy, trying ${initialPort + 1}...`);
+            startServer(initialPort + 1);
+        } else {
+            console.error('Server error:', err);
+        }
+    });
+};
+
+startServer(port);

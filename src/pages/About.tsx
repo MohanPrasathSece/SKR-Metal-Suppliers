@@ -3,9 +3,27 @@ import Layout from "@/components/Layout";
 import skrLogo from "@/assets/skr_logo-removebg-preview.png";
 
 
+import Link from "react-router-dom"; // This might not be needed if not used, but I'll stick to just adding new import properly.
+import SEO from "@/components/SEO";
+
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="About SKR Metal Suppliers | Top Washer Manufacturers in Coimbatore"
+        description="SKR Metal Suppliers: Established manufacturer of industrial washers. Serving Coimbatore, Tamil Nadu, and South India with quality Umbrella & Bitumen Washers."
+        canonical="/about"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "SKR Metal Suppliers",
+            "foundingLocation": "Coimbatore",
+            "description": "Leading manufacturer of industrial metal washers."
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-primary section-padding">
         <div className="container-section">

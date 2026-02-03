@@ -69,7 +69,9 @@ const SEO = ({
     ];
 
     // Merge custom schema
-    const jsonLd = schema ? [...baseSchema, schema] : baseSchema;
+    const jsonLd = schema
+        ? [...baseSchema, ...(Array.isArray(schema) ? schema : [schema])]
+        : baseSchema;
 
     return (
         <Helmet>

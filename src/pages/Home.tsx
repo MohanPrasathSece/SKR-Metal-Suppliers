@@ -14,50 +14,90 @@ import bitumenWashers from "@/assets/bitumen-front-removebg-preview.png";
 import SEO from "@/components/SEO";
 
 const Home = () => {
-    const homeSchema = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                    "@type": "Product",
-                    "name": "Industrial Umbrella Washers",
-                    "description": "High-quality metal umbrella washers for industrial roofing applications.",
-                    "image": umbrellaWashers,
-                    "brand": {
-                        "@type": "Brand",
-                        "name": "SKR"
-                    },
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock",
-                        "areaServed": "IN"
+    const homeSchema = [
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Industrial Umbrella Washers",
+                        "description": "High-quality metal umbrella washers for industrial roofing applications.",
+                        "image": umbrellaWashers,
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "SKR"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "availability": "https://schema.org/InStock",
+                            "areaServed": "IN"
+                        }
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "Product",
+                        "name": "Bitumen Washers",
+                        "description": "Weather-resistant bitumen washers for confident roofing and sealing.",
+                        "image": bitumenWashers,
+                        "brand": {
+                            "@type": "Brand",
+                            "name": "SKR"
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "availability": "https://schema.org/InStock",
+                            "areaServed": "IN"
+                        }
                     }
                 }
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                    "@type": "Product",
-                    "name": "Bitumen Washers",
-                    "description": "Weather-resistant bitumen washers for confident roofing and sealing.",
-                    "image": bitumenWashers,
-                    "brand": {
-                        "@type": "Brand",
-                        "name": "SKR"
-                    },
-                    "offers": {
-                        "@type": "Offer",
-                        "availability": "https://schema.org/InStock",
-                        "areaServed": "IN"
+            ]
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What is the minimum order quantity?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We handle orders of all sizes to accommodate different business needs. However, bulk quantities often enjoy additional discounts. Contact us for a tailored quote."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long does delivery take across Full South India?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Local deliveries in Coimbatore are processed within 24 hours. For other regions (Tamil Nadu, Kerala, Karnataka, etc.), it typically takes 2-4 business days."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you provide custom sizes?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we can provide metal washers in various custom sizes and thicknesses beyond our standard inventory to perfectly match your project requirements."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What materials do you use for your washers?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We use high-grade industrial materials including Galvanized Iron (GI), Stainless Steel (SS), and Bitumen-coated compounds for durability and corrosion resistance."
                     }
                 }
-            }
-        ]
-    };
+            ]
+        }
+    ];
 
     return (
         <Layout>

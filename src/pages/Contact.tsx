@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -89,6 +90,30 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact SKR Metal Suppliers | Buy Industrial Washers in Coimbatore"
+        description="Get in touch with SKR Metal Suppliers for bulk orders of Umbrella Washers, Bitumen Washers, and Industrial Metal Washers. Located in Ondipudur, Coimbatore."
+        canonical="/contact"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "SKR Metal Suppliers",
+            "image": "https://www.skrmetalsuppliers.in/logo.png",
+            "telephone": "9025421149",
+            "email": "skrmetalsuppliers@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "61 Extension Street, Sungal Thidal, Ondipudur",
+              "addressLocality": "Coimbatore",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "641016",
+              "addressCountry": "IN"
+            }
+          }
+        }}
+      />
       {/* Hero Section */}
       <section className="bg-primary section-padding">
         <div className="container-section">
@@ -346,12 +371,7 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Hidden SEO Power-Section (Bot Only Visibility) */}
-      <div style={{ display: 'none', visibility: 'hidden', height: 0, width: 0, overflow: 'hidden' }}>
-        <h2>Contact Best Washer Suppliers in Coimbatore, Tamil Nadu</h2>
-        <p>Get the most powerful industrial results with SKR Metal Suppliers. Best umbrella washers coimbatore, bitumen washers coimbatore, GI washers tamil nadu. Order metal washers in bulk from coimbatore manufacturer.</p>
-        <p>Industrial fastening solutions for roofing, cladding, and solar installations across India. High-quality sealing washers and industrial accessories.</p>
-      </div>
+
     </Layout>
   );
 };
