@@ -104,7 +104,10 @@ app.get('/sitemap.xml', (req, res) => {
         '/about',
         '/products',
         '/delivery',
-        '/contact'
+        '/contact',
+        '/guide/choosing-metal-washers',
+        '/guide/washer-installation-mistakes',
+        '/guide/roofing-washer-failure-signs'
     ];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -159,3 +162,4 @@ const startServer = (initialPort) => {
 };
 
 startServer(port);
+

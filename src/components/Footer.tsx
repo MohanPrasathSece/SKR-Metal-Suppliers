@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       <div className="container-section py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
@@ -60,6 +60,16 @@ const Footer = () => {
             </div>
           </div>
 
+
+          {/* Resources */}
+          <div>
+            <h4 className="font-bold text-lg mb-6 text-white">Resources</h4>
+            <div className="flex flex-col gap-3">
+              <Link to="/guide/choosing-metal-washers" className="text-sm text-white/80 hover:text-white transition-colors">Washer Selection Guide</Link>
+              <Link to="/guide/washer-installation-mistakes" className="text-sm text-white/80 hover:text-white transition-colors">Installation Mistakes</Link>
+              <Link to="/guide/roofing-washer-failure-signs" className="text-sm text-white/80 hover:text-white transition-colors">Failure Signs Guide</Link>
+            </div>
+          </div>
           {/* Contact Info */}
           <div>
             <h4 className="font-bold text-lg mb-6 text-white">Contact Us</h4>
@@ -94,3 +104,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
