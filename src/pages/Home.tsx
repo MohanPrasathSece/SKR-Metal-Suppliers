@@ -198,6 +198,9 @@ const Home = () => {
                                         src={heroImage}
                                         alt="Premium ISO-certified metal washer manufacturer warehouse in Coimbatore Tamil Nadu - SKR Metal Suppliers industrial-grade umbrella and bitumen washers for roofing construction projects"
                                         className="w-full h-full object-cover"
+                                        fetchPriority="high"
+                                        loading="eager"
+                                        decoding="sync"
                                     />
                                 </div>
                                 <div className="absolute -bottom-6 -right-6 bg-primary text-white px-8 py-4 rounded-xl shadow-xl hidden md:block">
@@ -271,6 +274,8 @@ const Home = () => {
                                     src={umbrellaWashers}
                                     alt="Heavy-duty galvanized iron GI stainless steel SS umbrella washers manufacturer Coimbatore - Best quality metal roofing fasteners for corrugated sheet profiled cladding industrial construction bulk wholesale supplier Tamil Nadu"
                                     className="w-full h-full object-contain scale-150 group-hover:scale-[1.65] transition-transform duration-500"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <div className="p-8">
@@ -294,6 +299,8 @@ const Home = () => {
                                     src={bitumenWashers}
                                     alt="Weather-resistant bitumen bonded EPDM rubber sealing washers Coimbatore manufacturer - Waterproof metal roofing washers for leak-proof installation industrial projects commercial buildings Tamil Nadu Kerala Karnataka supplier"
                                     className="w-full h-full object-contain scale-150 group-hover:scale-[1.65] transition-transform duration-500"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </div>
                             <div className="p-8">
