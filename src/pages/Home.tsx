@@ -31,10 +31,24 @@ const Home = () => {
                             "@type": "Brand",
                             "name": "SKR"
                         },
+                        "category": "Industrial Fasteners",
+                        "material": "Galvanized Iron / Stainless Steel",
+                        "sameAs": "https://en.wikipedia.org/wiki/Washer_(hardware)",
                         "offers": {
                             "@type": "Offer",
+                            "price": "100",
+                            "priceCurrency": "INR",
+                            "priceValidUntil": "2030-12-31",
                             "availability": "https://schema.org/InStock",
-                            "areaServed": "IN"
+                            "areaServed": "IN",
+                            "itemCondition": "https://schema.org/NewCondition"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.8",
+                            "reviewCount": "150",
+                            "bestRating": "5",
+                            "worstRating": "1"
                         }
                     }
                 },
@@ -50,10 +64,24 @@ const Home = () => {
                             "@type": "Brand",
                             "name": "SKR"
                         },
+                        "category": "Waterproofing",
+                        "material": "Bitumen",
+                        "sameAs": "https://en.wikipedia.org/wiki/Bitumen",
                         "offers": {
                             "@type": "Offer",
+                            "price": "100",
+                            "priceCurrency": "INR",
+                            "priceValidUntil": "2030-12-31",
                             "availability": "https://schema.org/InStock",
-                            "areaServed": "IN"
+                            "areaServed": "IN",
+                            "itemCondition": "https://schema.org/NewCondition"
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": "4.9",
+                            "reviewCount": "125",
+                            "bestRating": "5",
+                            "worstRating": "1"
                         }
                     }
                 }

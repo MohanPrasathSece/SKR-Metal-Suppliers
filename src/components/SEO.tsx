@@ -37,23 +37,39 @@ const SEO = ({
             "url": SEO_CONFIG.siteUrl,
             "logo": {
                 "@type": "ImageObject",
-                "url": `${SEO_CONFIG.siteUrl}/logo.png`, // Assuming logo exists
+                "url": `${SEO_CONFIG.siteUrl}/skr-logo.png`,
                 "width": 112,
                 "height": 112
             },
+            "sameAs": [
+                ...Object.values(SEO_CONFIG.social).filter(Boolean),
+                ...Object.values(SEO_CONFIG.entities)
+            ],
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": SEO_CONFIG.phone,
                 "contactType": "sales",
-                "areaServed": ["IN"],
+                "areaServed": ["IN", "AE", "SA"], // Keeping international potential open
                 "availableLanguage": "en"
             },
             "address": {
                 "@type": "PostalAddress",
+                "streetAddress": SEO_CONFIG.address.street,
                 "addressLocality": SEO_CONFIG.address.city,
                 "addressRegion": SEO_CONFIG.address.region,
+                "postalCode": SEO_CONFIG.address.postalCode,
                 "addressCountry": SEO_CONFIG.address.country
-            }
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": SEO_CONFIG.geo.latitude,
+                "longitude": SEO_CONFIG.geo.longitude
+            },
+            "hasMap": SEO_CONFIG.geo.mapUrl,
+            "areaServed": SEO_CONFIG.areasServed.map(area => ({
+                "@type": "City",
+                "name": area
+            }))
         },
         {
             "@context": "https://schema.org",
@@ -64,6 +80,11 @@ const SEO = ({
             "description": SEO_CONFIG.defaultDescription,
             "publisher": {
                 "@id": `${SEO_CONFIG.siteUrl}/#organization`
+            },
+            "about": {
+                "@type": "Thing",
+                "name": "Industrial Washers",
+                "sameAs": SEO_CONFIG.entities.washer
             }
         }
     ];
@@ -78,6 +99,7 @@ const SEO = ({
             {/* Standard Meta Tags */}
             <title>{siteTitle}</title>
             <meta name="description" content={metaDescription} />
+            <meta name="keywords" content={SEO_CONFIG.powerKeywords.join(", ")} />
             <link rel="canonical" href={canonicalUrl} />
             <meta name="robots" content="index, follow" />
 
@@ -95,11 +117,11 @@ const SEO = ({
             <meta name="twitter:description" content={metaDescription} />
             {image && <meta name="twitter:image" content={ogImage} />}
 
-            {/* Local SEO Tags */}
+            {/* Ultra-Specific Local SEO Tags */}
             <meta name="geo.region" content="IN-TN" />
-            <meta name="geo.placename" content="Coimbatore" />
-            <meta name="geo.position" content="11.0168;76.9558" /> {/* Coimbatore generic lat/long */}
-            <meta name="ICBM" content="11.0168, 76.9558" />
+            <meta name="geo.placename" content={`${SEO_CONFIG.address.city}, ${SEO_CONFIG.address.region}, ${SEO_CONFIG.address.country}`} />
+            <meta name="geo.position" content={`${SEO_CONFIG.geo.latitude};${SEO_CONFIG.geo.longitude}`} />
+            <meta name="ICBM" content={`${SEO_CONFIG.geo.latitude}, ${SEO_CONFIG.geo.longitude}`} />
 
             {/* Structured Data */}
             <script type="application/ld+json">

@@ -124,8 +124,16 @@ Sitemap: https://www.skrmetalsuppliers.in/sitemap.xml`;
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../dist/index.html'));
+    const indexPath = path.resolve(__dirname, '../dist/index.html');
+    res.sendFile(indexPath, (err) => {
+        if (err) {
+            console.error('Error sending index.html:', err);
+            res.status(500).send('Error loading application.');
+        }
+    });
 });
 
 const startServer = (initialPort) => {

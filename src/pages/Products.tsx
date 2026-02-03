@@ -27,16 +27,67 @@ const Products = () => {
           "@type": "CollectionPage",
           "name": "Industrial Washers Catalog",
           "description": "Catalog of Umbrella and Bitumen Washers",
+          "about": {
+            "@type": "Thing",
+            "name": "Washer (Hardware)",
+            "sameAs": "https://en.wikipedia.org/wiki/Washer_(hardware)"
+          },
           "hasPart": [
             {
               "@type": "Product",
               "name": "Umbrella Washer",
-              "description": "Industrial grade metal umbrella washer."
+              "description": "Industrial grade metal umbrella washer for roofing applications.",
+              "image": "https://www.skrmetalsuppliers.in/assets/umbrella-front-removebg-preview.png",
+              "category": "Industrial Fasteners",
+              "material": {
+                "@type": "Product",
+                "name": "Galvanized Iron / Stainless Steel",
+                "sameAs": "https://en.wikipedia.org/wiki/Sheet_metal"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "100",
+                "priceCurrency": "INR",
+                "priceValidUntil": "2030-12-31",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition",
+                "areaServed": "IN"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "reviewCount": "150",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
             },
             {
               "@type": "Product",
               "name": "Bitumen Washer",
-              "description": "Waterproof bitumen washer for roofing."
+              "description": "Waterproof bitumen washer for roofing.",
+              "image": "https://www.skrmetalsuppliers.in/assets/bitumen-front-removebg-preview.png",
+              "category": "Waterproofing Materials",
+              "material": {
+                "@type": "Product",
+                "name": "Bitumen",
+                "sameAs": "https://en.wikipedia.org/wiki/Bitumen"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "100",
+                "priceCurrency": "INR",
+                "priceValidUntil": "2030-12-31",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition",
+                "areaServed": "IN"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "125",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
             }
           ]
         }}

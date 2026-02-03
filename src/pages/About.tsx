@@ -19,8 +19,18 @@ const About = () => {
           "mainEntity": {
             "@type": "Organization",
             "name": "SKR Metal Suppliers",
-            "foundingLocation": "Coimbatore",
-            "description": "Leading manufacturer of industrial metal washers."
+            "foundingLocation": {
+              "@type": "City",
+              "name": "Coimbatore",
+              "sameAs": "https://en.wikipedia.org/wiki/Coimbatore"
+            },
+            "description": "Leading manufacturer of industrial metal washers.",
+            "areaServed": [
+              { "@type": "City", "name": "Coimbatore" },
+              { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+              { "@type": "AdministrativeArea", "name": "Kerala" },
+              { "@type": "AdministrativeArea", "name": "Karnataka" }
+            ]
           }
         }}
       />

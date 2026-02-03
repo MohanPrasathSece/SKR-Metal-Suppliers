@@ -12,10 +12,37 @@ export const SEO_CONFIG = {
         country: "IN",
         postalCode: "641016"
     },
+    geo: {
+        latitude: "10.994772",
+        longitude: "77.062174",
+        mapUrl: "https://maps.google.com/?q=SKR+Metal+Suppliers+Ondipudur+Coimbatore"
+    },
     social: {
         facebook: "https://facebook.com/skrmetalsuppliers",
         twitter: "",
         instagram: "https://instagram.com/skrmetalsuppliers",
         linkedin: "https://linkedin.com/company/skr-metal-suppliers"
-    }
+    },
+    entities: {
+        washer: "https://en.wikipedia.org/wiki/Washer_(hardware)",
+        manufacturing: "https://en.wikipedia.org/wiki/Manufacturing",
+        coimbatore: "https://en.wikipedia.org/wiki/Coimbatore",
+        bitumen: "https://en.wikipedia.org/wiki/Bitumen",
+        sheetMetal: "https://en.wikipedia.org/wiki/Sheet_metal"
+    },
+    areasServed: [
+        "Coimbatore", "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana", "Chennai", "Bangalore", "Kochi", "Madurai", "Salem", "Tirupur", "Erode", "Trichy"
+    ],
+    powerKeywords: [
+        "Umbrella Washers Manufacturer",
+        "Bitumen Washers Supplier",
+        "Industrial Washers Coimbatore",
+        "Roofing Washers Tamil Nadu",
+        "Metal Washers Wholesale India",
+        "GI Washers Manufacturer",
+        "SS Washers Supplier South India",
+        "Bonded Washers Manufacturer",
+        "EPDM Washers Coimbatore",
+        "Nut Bolt Washer Supplier"
+    ]
 };

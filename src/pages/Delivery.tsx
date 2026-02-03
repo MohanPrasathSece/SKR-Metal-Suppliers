@@ -34,6 +34,30 @@ const Delivery = () => {
         title="Reliable Industrial Washer Delivery across South India | Coimbatore to Kerala"
         description="SKR Metal Suppliers guarantees fast delivery of Umbrella Washers and Bitumen Washers across Tamil Nadu, Kerala, Karnataka and Andhra Pradesh."
         canonical="/delivery"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Industrial Washer Delivery",
+          "provider": {
+            "@type": "Organization",
+            "name": "SKR Metal Suppliers"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Coimbatore", "sameAs": "https://en.wikipedia.org/wiki/Coimbatore" },
+            { "@type": "City", "name": "Chennai", "sameAs": "https://en.wikipedia.org/wiki/Chennai" },
+            { "@type": "City", "name": "Bangalore", "sameAs": "https://en.wikipedia.org/wiki/Bangalore" },
+            { "@type": "AdministrativeArea", "name": "Tamil Nadu", "sameAs": "https://en.wikipedia.org/wiki/Tamil_Nadu" },
+            { "@type": "AdministrativeArea", "name": "Kerala", "sameAs": "https://en.wikipedia.org/wiki/Kerala" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Delivery Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Same Day Delivery (Coimbatore)" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Interstate Shipping (South India)" } }
+            ]
+          }
+        }}
       />
       {/* Hero Section */}
       <section className="bg-primary section-padding">
