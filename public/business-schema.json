@@ -1,0 +1,185 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "SKR Metal Suppliers",
+    "description": "Leading manufacturer and wholesale supplier of Umbrella Washers, Bitumen Washers, and Industrial Metal Washers in Coimbatore. ISO-certified quality products with same-day delivery across Tamil Nadu, Kerala, Karnataka & South India.",
+    "@id": "https://www.skrmetalsuppliers.in/#organization",
+    "url": "https://www.skrmetalsuppliers.in",
+    "telephone": "+919025421149",
+    "alternativeName": [
+        "SKR Metal",
+        "SKR Washers",
+        "SKR Metal Suppliers Coimbatore"
+    ],
+    "email": "skrmetalsuppliers@gmail.com",
+    "founder": {
+        "@type": "Person",
+        "name": "SKR Metal Suppliers"
+    },
+    "foundingDate": "2010",
+    "priceRange": "₹₹",
+    "paymentAccepted": "Cash, UPI, Bank Transfer, Cheque",
+    "currenciesAccepted": "INR",
+    "areaServed": [
+        {
+            "@type": "City",
+            "name": "Coimbatore",
+            "containedInPlace": {
+                "@type": "State",
+                "name": "Tamil Nadu"
+            }
+        },
+        {
+            "@type": "State",
+            "name": "Tamil Nadu"
+        },
+        {
+            "@type": "State",
+            "name": "Kerala"
+        },
+        {
+            "@type": "State",
+            "name": "Karnataka"
+        },
+        {
+            "@type": "State",
+            "name": "Andhra Pradesh"
+        },
+        {
+            "@type": "State",
+            "name": "Telangana"
+        }
+    ],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "61 Extension Street, Sungal Thidal, Ondipudur",
+        "addressLocality": "Coimbatore",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "641016",
+        "addressCountry": "IN"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.994772",
+        "longitude": "77.062174"
+    },
+    "hasMap": "https://maps.google.com/?q=SKR+Metal+Suppliers+Ondipudur+Coimbatore",
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        }
+    ],
+    "image": [
+        "https://www.skrmetalsuppliers.in/skr-logo.png"
+    ],
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.skrmetalsuppliers.in/skr-logo.png",
+        "width": 112,
+        "height": 112
+    },
+    "sameAs": [
+        "https://facebook.com/skrmetalsuppliers",
+        "https://instagram.com/skrmetalsuppliers",
+        "https://linkedin.com/company/skr-metal-suppliers"
+    ],
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+    },
+    "makesOffer": [
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Product",
+                "name": "Umbrella Washers",
+                "description": "High-quality galvanized iron and stainless steel umbrella washers for industrial roofing applications"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Product",
+                "name": "Bitumen Washers",
+                "description": "Weather-resistant bitumen washers for roofing and waterproofing applications"
+            }
+        },
+        {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Product",
+                "name": "Industrial Metal Washers",
+                "description": "Heavy-duty metal washers for construction and industrial projects"
+            }
+        }
+    ],
+    "knowsAbout": [
+        "Metal Washers Manufacturing",
+        "Industrial Fasteners",
+        "Roofing Materials",
+        "Umbrella Washers",
+        "Bitumen Washers",
+        "Galvanized Iron Products",
+        "Stainless Steel Washers"
+    ],
+    "slogan": "Quality Metal Washers for Industrial Excellence",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Metal Washers Catalog",
+        "itemListElement": [
+            {
+                "@type": "OfferCatalog",
+                "name": "Umbrella Washers",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "GI Umbrella Washers"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "SS Umbrella Washers"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "OfferCatalog",
+                "name": "Bitumen Washers",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "Bonded Bitumen Washers"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Product",
+                            "name": "EPDM Sealing Washers"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
