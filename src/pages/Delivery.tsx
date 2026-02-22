@@ -31,8 +31,8 @@ const Delivery = () => {
   return (
     <Layout>
       <SEO
-        title="Fast Delivery of Industrial Washers Across Tamil Nadu, Kerala, Karnataka | Door-to-Door Service"
-        description="🚚 Fastest Metal Washer Delivery Service ✓ Same-Day Delivery in Coimbatore ✓ 24-48 Hour Delivery Tamil Nadu/Kerala ✓ Bulk Order Logistics ✓ Free Delivery on Orders Above ₹10,000 ✓ Cash on Delivery Available | Track Your Order Live"
+        title="Best Metal Washer Delivery in India | South India Coverage | SKR"
+        description="Fastest and best metal washer delivery in India. Same-day service in Coimbatore and quick delivery across Tamil Nadu, Kerala, and Karnataka."
         canonical="/delivery"
         schema={{
           "@context": "https://schema.org",
@@ -188,15 +188,12 @@ const Delivery = () => {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {[
-                "Coimbatore",
-                "Chennai",
-                "Bangalore",
-                "Erode",
-                "Tirupur",
-                "Salem",
-                "Madurai",
-                "Trichy",
+                "Tamil Nadu",
                 "Kerala",
+                "Karnataka",
+                "Andhra Pradesh",
+                "Telangana",
+                "Coimbatore",
               ].map((city) => (
                 <div
                   key={city}

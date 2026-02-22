@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import skrLogo from "@/assets/skr_logo-removebg-preview.png";
+import skrLogo from "@/assets/logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
   { name: "Products", path: "/products" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Delivery", path: "/delivery" },
   { name: "Contact", path: "/contact" },
 ];
@@ -27,7 +28,7 @@ const Header = () => {
             <img
               src={skrLogo}
               alt="SKR Metal Suppliers Logo"
-              className="h-16 md:h-28 w-auto object-contain transition-transform hover:scale-105 py-1"
+              className="h-10 md:h-16 w-auto object-contain transition-transform hover:scale-105"
             />
           </Link>
 

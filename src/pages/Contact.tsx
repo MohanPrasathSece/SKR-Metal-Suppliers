@@ -91,8 +91,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Metal Washer Supplier Coimbatore | Get Instant Quote | Call 9025421149 Now"
-        description="💬 Get FREE Quote in 10 Minutes ✓ Call/WhatsApp: 9025421149 ✓ Visit Factory: Ondipudur, Coimbatore ✓ Email: skrmetalsuppliers@gmail.com ✓ Speak to Washer Expert Now ✓ Same-Day Response Guaranteed | Bulk Orders Welcome"
+        title="Best Metal Washer Supplier Contact India | Call 9025421149 | Coimbatore"
+        description="Contact the best metal washer manufacturer in India. Get instant quotes and premium support for industrial roofing projects from our Coimbatore experts."
         canonical="/contact"
         schema={{
           "@context": "https://schema.org",

@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import skrLogo from "@/assets/skr_logo-removebg-preview.png";
+import skrLogo from "@/assets/old_logo.png";
 
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
-      <div className="container-section py-16 md:py-20">
+      <div className="container-full pl-6 sm:pl-16 md:pl-32 lg:pl-40 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -66,10 +66,7 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <a href="tel:9025421149" className="flex items-start gap-3 text-sm text-white/80 hover:text-white transition-colors">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <div>
-                  <div>9025421149</div>
-                  <div>7305171210</div>
-                </div>
+                <span>9025421149</span>
               </a>
               <a href="mailto:skrmetalsuppliers@gmail.com" className="flex items-start gap-3 text-sm text-white/80 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />

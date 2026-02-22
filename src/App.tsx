@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import ChoosingMetalWashers from "./pages/guides/ChoosingMetalWashers";
 import WasherInstallationMistakes from "./pages/guides/WasherInstallationMistakes";
 import WasherFailureSignsGuide from "./pages/guides/WasherFailureSigns";
+import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/guide/choosing-metal-washers" element={<ChoosingMetalWashers />} />
             <Route path="/guide/washer-installation-mistakes" element={<WasherInstallationMistakes />} />
             <Route path="/guide/roofing-washer-failure-signs" element={<WasherFailureSignsGuide />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Analytics />

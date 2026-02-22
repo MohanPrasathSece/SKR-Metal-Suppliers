@@ -108,7 +108,27 @@
         @apply max-w-7xl mx-auto px-6 sm:px-6 lg:px-8;
     }
 
+    .container-full {
+        @apply w-full px-6 sm:px-6 lg:px-8;
+    }
+
     .section-padding {
         @apply py-16 md:py-20 lg:py-24;
+    }
+
+    .animate-bounce-subtle {
+        animation: bounce-subtle 3s infinite ease-in-out;
+    }
+
+    @keyframes bounce-subtle {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
     }
 }

@@ -35,18 +35,18 @@ const Products = () => {
           "hasPart": [
             {
               "@type": "Product",
-              "name": "Umbrella Washer",
-              "description": "Industrial grade metal umbrella washer for roofing applications.",
+              "name": "Nitrile Umbrella Washer",
+              "description": "Premium dual-layered roofing washer with zinc-coated MS top and rubber base for 100% leak protection.",
               "image": "https://www.skrmetalsuppliers.in/assets/umbrella-front-removebg-preview.png",
               "category": "Industrial Fasteners",
               "material": {
                 "@type": "Product",
-                "name": "Galvanized Iron / Stainless Steel",
+                "name": "Nitrile Rubber / Zinc-Coated MS",
                 "sameAs": "https://en.wikipedia.org/wiki/Sheet_metal"
               },
               "offers": {
                 "@type": "Offer",
-                "price": "100",
+                "price": "2",
                 "priceCurrency": "INR",
                 "priceValidUntil": "2030-12-31",
                 "availability": "https://schema.org/InStock",
@@ -63,18 +63,18 @@ const Products = () => {
             },
             {
               "@type": "Product",
-              "name": "Bitumen Washer",
-              "description": "Waterproof bitumen washer for roofing.",
+              "name": "Black Galvanized Cast Iron Bitumen Washer",
+              "description": "Solar-activated waterproof bitumen washer made from quality tar felt sheets.",
               "image": "https://www.skrmetalsuppliers.in/assets/bitumen-front-removebg-preview.png",
               "category": "Waterproofing Materials",
               "material": {
                 "@type": "Product",
-                "name": "Bitumen",
+                "name": "Bitumen / Tar Felt",
                 "sameAs": "https://en.wikipedia.org/wiki/Bitumen"
               },
               "offers": {
                 "@type": "Offer",
-                "price": "100",
+                "price": "14",
                 "priceCurrency": "INR",
                 "priceValidUntil": "2030-12-31",
                 "availability": "https://schema.org/InStock",
@@ -111,9 +111,13 @@ const Products = () => {
             {/* Umbrella Washers */}
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="order-2 md:order-1">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Umbrella Washers</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Nitrile Umbrella Washers</h2>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl font-bold text-primary">₹ 2</span>
+                  <span className="text-muted-foreground">/ Piece</span>
+                </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Our umbrella washers are designed for industrial applications where durability and reliability are essential. Made from quality metal materials, these washers provide excellent performance in demanding environments.
+                  Our Nitrile Umbrella Washers represent a significant advancement in roofing security. Each unit combines a high-resilience rubber base with a protective zinc-coated Mild Steel (MS) top washer. This precision-engineered hybrid design ensures a superior, airtight seal that eliminates 100% of water leakage.
                 </p>
                 <div className="space-y-3 mb-8">
                   <div className="flex items-start gap-3">
@@ -182,9 +186,13 @@ const Products = () => {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Bitumen Washers</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Black Galvanized Cast Iron Bitumen Washers</h2>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-2xl font-bold text-primary">₹ 14</span>
+                  <span className="text-muted-foreground">/ Piece</span>
+                </div>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Bitumen washers are specially designed for roofing and industrial applications. These weather-resistant washers provide reliable sealing and protection against the elements.
+                  Specially engineered to stop roofing leaks, our premium Bitumen Washers are crafted from high-quality tar felt sheets. When exposed to solar heat, these washers melt and seat perfectly into the cup washer, creating a foolproof seal between the bolt and the metal washer to ensure total water protection.
                 </p>
                 <div className="space-y-3 mb-8">
                   <div className="flex items-start gap-3">

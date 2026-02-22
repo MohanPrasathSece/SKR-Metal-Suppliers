@@ -31,7 +31,7 @@ export const SEO_CONFIG = {
         sheetMetal: "https://en.wikipedia.org/wiki/Sheet_metal"
     },
     areasServed: [
-        "Coimbatore", "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana", "Chennai", "Bangalore", "Kochi", "Madurai", "Salem", "Tirupur", "Erode", "Trichy"
+        "Tamil Nadu", "Kerala", "Karnataka", "Andhra Pradesh", "Telangana", "Coimbatore", "Chennai", "Bangalore", "Kochi", "Madurai", "Salem", "Tirupur", "Erode", "Trichy"
     ],
     powerKeywords: [
         // Primary Money Keywords
@@ -83,11 +83,13 @@ export const SEO_CONFIG = {
         "ISO Certified Washer Manufacturer",
         "Quality Metal Fasteners India",
 
-        // Competitive Keywords
-        "Best Price Umbrella Washers",
-        "Trusted Metal Washer Supplier",
-        "Top Quality Industrial Washers",
-        "Reliable Bulk Washer Distributor",
+        // Dominant Ranking Keywords
+        "Best Metal Washer Manufacturer in India",
+        "Best Umbrella Washers in Tamil Nadu",
+        "Best Bitumen Washers in Coimbatore",
+        "Top Rated Roofing Washers India",
+        "Leading Industrial Washer Supplier Tamil Nadu",
+        "Best Price Nitrile Washers India",
 
         // Voice Search / Natural Language
         "where to buy umbrella washers in coimbatore",

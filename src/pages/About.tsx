@@ -1,6 +1,6 @@
 import { CheckCircle, Award, Users, Target, Handshake } from "lucide-react";
 import Layout from "@/components/Layout";
-import skrLogo from "@/assets/skr_logo-removebg-preview.png";
+import skrLogo from "@/assets/logo.png";
 
 
 import Link from "react-router-dom"; // This might not be needed if not used, but I'll stick to just adding new import properly.
@@ -10,8 +10,8 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About SKR Metal Suppliers | ISO-Certified Washer Manufacturer Since Inception | Coimbatore"
-        description="🏆 Trusted Metal Washer Manufacturer serving 500+ Contractors, Builders & Industries across Tamil Nadu, Kerala, Karnataka ✓ ISO Certified Quality ✓ 15+ Years Experience ✓ In-House Manufacturing ✓ Same-Day Delivery Coimbatore | Why Builders Trust SKR"
+        title="Best Metal Washer Manufacturer in India | SKR Metal Suppliers Coimbatore"
+        description="SKR Metal Suppliers is the leading manufacturer of Nitrile Umbrella and Bitumen washers in India. Ranked as the best quality supplier in Tamil Nadu and Coimbatore for industrial roofing."
         canonical="/about"
         schema={{
           "@context": "https://schema.org",
@@ -26,10 +26,11 @@ const About = () => {
             },
             "description": "Leading manufacturer of industrial metal washers.",
             "areaServed": [
-              { "@type": "City", "name": "Coimbatore" },
               { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
               { "@type": "AdministrativeArea", "name": "Kerala" },
-              { "@type": "AdministrativeArea", "name": "Karnataka" }
+              { "@type": "AdministrativeArea", "name": "Karnataka" },
+              { "@type": "AdministrativeArea", "name": "Andhra Pradesh" },
+              { "@type": "AdministrativeArea", "name": "Telangana" }
             ]
           }
         }}

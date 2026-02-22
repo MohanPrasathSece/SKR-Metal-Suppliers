@@ -8,7 +8,8 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/hero-warehouse.jpg";
+import umbrellaPack from "@/assets/umbrella_hero.png";
+import bitumenHero from "@/assets/bitumen_copy_hero.png";
 import umbrellaWashers from "@/assets/umbrella-front-removebg-preview.png";
 import bitumenWashers from "@/assets/bitumen-front-removebg-preview.png";
 import SEO from "@/components/SEO";
@@ -24,19 +25,19 @@ const Home = () => {
                     "position": 1,
                     "item": {
                         "@type": "Product",
-                        "name": "Industrial Umbrella Washers",
-                        "description": "High-quality metal umbrella washers for industrial roofing applications.",
+                        "name": "Nitrile Umbrella Washers",
+                        "description": "Premium dual-layered roofing washer with zinc-coated MS top and rubber base for 100% leak protection.",
                         "image": umbrellaWashers,
                         "brand": {
                             "@type": "Brand",
                             "name": "SKR"
                         },
                         "category": "Industrial Fasteners",
-                        "material": "Galvanized Iron / Stainless Steel",
+                        "material": "Nitrile Rubber / Zinc-Coated MS",
                         "sameAs": "https://en.wikipedia.org/wiki/Washer_(hardware)",
                         "offers": {
                             "@type": "Offer",
-                            "price": "100",
+                            "price": "2",
                             "priceCurrency": "INR",
                             "priceValidUntil": "2030-12-31",
                             "availability": "https://schema.org/InStock",
@@ -57,19 +58,19 @@ const Home = () => {
                     "position": 2,
                     "item": {
                         "@type": "Product",
-                        "name": "Bitumen Washers",
-                        "description": "Weather-resistant bitumen washers for confident roofing and sealing.",
+                        "name": "Black Galvanized Cast Iron Bitumen Washers",
+                        "description": "Solar-activated waterproof bitumen washer made from quality tar felt sheets.",
                         "image": bitumenWashers,
                         "brand": {
                             "@type": "Brand",
                             "name": "SKR"
                         },
                         "category": "Waterproofing",
-                        "material": "Bitumen",
+                        "material": "Bitumen / Tar Felt",
                         "sameAs": "https://en.wikipedia.org/wiki/Bitumen",
                         "offers": {
                             "@type": "Offer",
-                            "price": "100",
+                            "price": "14",
                             "priceCurrency": "INR",
                             "priceValidUntil": "2030-12-31",
                             "availability": "https://schema.org/InStock",
@@ -130,15 +131,15 @@ const Home = () => {
     return (
         <Layout>
             <SEO
-                title="Premium Metal Washers Manufacturer in Coimbatore | Umbrella & Bitumen Washer Supplier"
-                description="🏭 Trusted Umbrella Washer & Bitumen Washer Manufacturer in Coimbatore ✓ ISO Certified ✓ Same-Day Delivery ✓ Bulk Wholesale Rates ✓ GI/SS Washers for Roofing, Construction & Industrial Projects | Free Quote: 9025421149"
+                title="Best Metal Washer Manufacturer in India | Coimbatore, Tamil Nadu"
+                description="SKR Metal Suppliers is the best manufacturer of Nitrile Umbrella and Bitumen washers in India. Premium quality fasteners in Coimbatore, Tamil Nadu. Fast delivery across South India."
                 canonical="/"
                 schema={homeSchema}
             />
             {/* Hero Section - White & Navy */}
             <section className="bg-white">
-                <div className="container-section py-12 md:py-20">
-                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div className="container-section py-8 md:py-16">
+                    <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
                         <div>
 
 
@@ -147,11 +148,11 @@ const Home = () => {
                             </h1>
 
                             <p className="text-lg md:text-xl mb-4 font-medium leading-relaxed text-gray-700">
-                                Reliable Umbrella & Bitumen Washer Supply Across Full South India
+                                Reliable Umbrella & Bitumen Washer Supply Across Kerala, AP, Karnataka, Telangana & Tamil Nadu
                             </p>
 
                             <p className="text-base mb-10 leading-relaxed text-gray-600 max-w-xl">
-                                SKR Metal Suppliers provides high-quality metal washers for industrial and commercial applications. Serving businesses across Tamil Nadu and Full South India.
+                                SKR Metal Suppliers provides high-quality industrial metal washers with fast delivery across Full South India. Trusted by contractors and builders for premium sealing solutions.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-5">
@@ -191,22 +192,34 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="order-first lg:order-last">
-                            <div className="relative">
-                                <div className="aspect-[4/3] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl transform hover:scale-105 transition-transform duration-500">
+                        <div className="md:order-last">
+                            <div className="relative h-auto md:h-[500px] grid grid-cols-2 gap-4 md:block">
+                                {/* Bitumen Washer Image - Top Left, pushed slightly up on MD+ */}
+                                <div className="md:absolute md:-top-4 md:left-0 md:w-2/3 aspect-square rounded-2xl overflow-hidden border-4 border-primary/10 shadow-xl md:shadow-2xl z-10 bg-slate-100">
                                     <img
-                                        src={heroImage}
-                                        alt="Premium ISO-certified metal washer manufacturer warehouse in Coimbatore Tamil Nadu - SKR Metal Suppliers industrial-grade umbrella and bitumen washers for roofing construction projects"
+                                        src={bitumenHero}
+                                        alt="Premium Bitumen Washers"
                                         className="w-full h-full object-cover"
-                                        fetchPriority="high"
-                                        loading="eager"
-                                        decoding="sync"
                                     />
                                 </div>
-                                <div className="absolute -bottom-6 -right-6 bg-primary text-white px-8 py-4 rounded-xl shadow-xl hidden md:block">
-                                    <div className="text-sm font-semibold flex items-center gap-2">
+                                {/* Umbrella Washer Image - Bottom Right, pushed further down & right on MD+ */}
+                                <div className="md:absolute md:bottom-[-28px] md:right-[-12px] md:w-2/3 aspect-square rounded-2xl overflow-hidden border-4 border-primary/10 shadow-xl md:shadow-2xl transform hover:scale-105 transition-all duration-500 z-20">
+                                    <img
+                                        src={umbrellaPack}
+                                        alt="Premium Umbrella Washers Pack"
+                                        className="w-full h-full object-cover"
+                                        // @ts-ignore
+                                        fetchpriority="high"
+                                        loading="eager"
+                                    />
+                                </div>
+                                {/* Decorative Cross Element */}
+                                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-primary/20 rounded-full animate-pulse z-0 hidden lg:block"></div>
+
+                                <div className="hidden lg:block absolute -bottom-4 -left-4 bg-primary text-white px-6 py-3 rounded-xl shadow-xl z-30 animate-bounce-subtle">
+                                    <div className="text-sm font-bold flex items-center gap-2">
                                         <CheckCircle className="w-5 h-5" />
-                                        ISO Certified Quality
+                                        South India's Choice
                                     </div>
                                 </div>
                             </div>
@@ -279,10 +292,11 @@ const Home = () => {
                                 />
                             </div>
                             <div className="p-8">
-                                <h3 className="text-xl font-bold mb-4 text-primary">Umbrella Washers</h3>
-                                <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                                    Durable metal washers designed for industrial applications. Built with quality materials for long-lasting performance.
+                                <h3 className="text-xl font-bold mb-4 text-primary">Nitrile Umbrella Washers</h3>
+                                <p className="text-base text-gray-600 mb-2 leading-relaxed">
+                                    High-performance hybrid fasteners combining a protective MS top with a resilient rubber base to eliminate water ingress.
                                 </p>
+                                <div className="text-2xl font-bold text-primary mb-6">₹2/Piece</div>
                                 <Button asChild variant="outline" size="lg" className="w-full text-sm font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-white">
                                     <Link to="/products" className="flex items-center justify-center gap-2">
                                         View Details
@@ -305,9 +319,10 @@ const Home = () => {
                             </div>
                             <div className="p-8">
                                 <h3 className="text-xl font-bold mb-4 text-primary">Bitumen Washers</h3>
-                                <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                                    Weather-resistant washers for roofing and industrial use. Strong and reliable for demanding applications.
+                                <p className="text-base text-gray-600 mb-2 leading-relaxed">
+                                    Premium tar-felt sealing solutions that utilize solar heat to create a watertight barrier for all roofing bolts.
                                 </p>
+                                <div className="text-2xl font-bold text-primary mb-6">₹14/Piece</div>
                                 <Button asChild variant="outline" size="lg" className="w-full text-sm font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-white">
                                     <Link to="/products" className="flex items-center justify-center gap-2">
                                         View Details

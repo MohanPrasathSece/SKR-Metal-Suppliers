@@ -1,51 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/</loc>
-        <lastmod>2026-02-03T13:55:00+05:30</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/about</loc>
-        <lastmod>2026-02-03T13:55:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/products</loc>
-        <lastmod>2026-02-03T13:55:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/delivery</loc>
-        <lastmod>2026-02-03T13:55:00+05:30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/contact</loc>
-        <lastmod>2026-02-03T13:55:00+05:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/guide/choosing-metal-washers</loc>
-        <lastmod>2026-02-03T14:05:00+05:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/guide/roofing-washer-failure-signs</loc>
-        <lastmod>2026-02-03T14:05:00+05:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.skrmetalsuppliers.in/guide/washer-installation-mistakes</loc>
-        <lastmod>2026-02-03T14:05:00+05:30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Home Page -->
+  <url>
+    <loc>https://www.skrmetalsuppliers.in/</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/umbrella_hero.png</image:loc>
+      <image:title>Best Nitrile Umbrella Washers in India</image:title>
+      <image:caption>Premium quality Nitrile Umbrella Washers for leak-proof roofing - SKR Metal Suppliers Coimbatore</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/bitumen_copy_hero.png</image:loc>
+      <image:title>Best Bitumen Washers in Tamil Nadu</image:title>
+      <image:caption>Industrial Bitumen Washers with solar-activated sealing for tar felt roofing</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Gallery Page with Aggressive Image SEO -->
+  <url>
+    <loc>https://www.skrmetalsuppliers.in/gallery</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <!-- Umbrella Washers -->
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/umbrella-front-removebg-preview.png</image:loc>
+      <image:title>Best Nitrile Umbrella Washer India - Front View</image:title>
+      <image:caption>Premium Zinc Coated MS Top Front View for Roofing Leak Protection</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/umbrella_bottom-removebg-preview.png</image:loc>
+      <image:title>Best Roofing Washer Tamil Nadu - Back View</image:title>
+      <image:caption>High Resilience Nitrile Rubber Back View for 100% Water Sealing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/umbrella_side-removebg-preview.png</image:loc>
+      <image:title>Best Metal Washer Coimbatore - Side View</image:title>
+      <image:caption>Industrial Side Profile showing precise Rubber thickness</image:caption>
+    </image:image>
+    <!-- Bitumen Washers -->
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/bitumen-front-removebg-preview.png</image:loc>
+      <image:title>Best Bitumen Washer India - Front View</image:title>
+      <image:caption>Black Galvanized Cast Iron Sealing Solution for Tar Felt Roofing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.skrmetalsuppliers.in/assets/bitumen-side-removebg-preview.png</image:loc>
+      <image:title>Best Tar Felt Washer Tamil Nadu - Side View</image:title>
+      <image:caption>Solar-Activated Sealing for Complete Waterproofing</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://www.skrmetalsuppliers.in/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Products Page -->
+  <url>
+    <loc>https://www.skrmetalsuppliers.in/products</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.skrmetalsuppliers.in/contact</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

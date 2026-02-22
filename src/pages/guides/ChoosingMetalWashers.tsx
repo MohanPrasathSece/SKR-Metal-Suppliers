@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CheckCircle, AlertTriangle, Wrench, BookOpen, ArrowRight } from "lucide-react";
+import { CheckCircle, AlertTriangle, Wrench, BookOpen, ArrowRight, Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -66,8 +66,8 @@ const ChoosingMetalWashers = () => {
     return (
         <Layout>
             <SEO
-                title="How to Choose Metal Washers for Roofing Applications | Technical Guide"
-                description="Engineering guide to selecting the right metal washers for industrial roofing. Learn about material properties, load requirements, environmental factors, and common mistakes to avoid."
+                title="Best Industrial Washer Selection Guide | Metal Roofing Expert India"
+                description="Expert guide to choosing the best metal washers in India. Engineering insights on Nitrile and Bitumen washer selection for industrial roofing projects in Tamil Nadu."
                 canonical="/guide/choosing-metal-washers"
                 schema={[schema, faqSchema]}
             />
