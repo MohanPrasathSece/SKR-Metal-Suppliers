@@ -1,6 +1,6 @@
 import { CheckCircle, Award, Users, Target, Handshake } from "lucide-react";
 import Layout from "@/components/Layout";
-import skrLogo from "@/assets/logo.png";
+
 
 
 import Link from "react-router-dom"; // This might not be needed if not used, but I'll stick to just adding new import properly.

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import skrLogo from "@/assets/logo.png";
+const skrLogo = "/skr-logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },

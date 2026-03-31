@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import skrLogo from "@/assets/old_logo.png";
+const skrLogo = "/skr-logo.png";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
               <img
                 src={skrLogo}
                 alt="SKR Metal Suppliers Logo"
-                className="h-24 w-auto object-contain brightness-0 invert"
+                className="h-24 w-auto object-contain"
               />
             </Link>
             <p className="text-sm text-white/80 leading-relaxed mb-6 max-w-md">

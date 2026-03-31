@@ -100,7 +100,7 @@ const Contact = () => {
           "mainEntity": {
             "@type": "LocalBusiness",
             "name": "SKR Metal Suppliers",
-            "image": "https://www.skrmetalsuppliers.in/logo.png",
+            "image": "https://www.skrmetalsuppliers.in/skr-logo.png",
             "telephone": "9025421149",
             "email": "skrmetalsuppliers@gmail.com",
             "address": {
