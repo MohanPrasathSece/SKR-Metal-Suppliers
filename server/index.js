@@ -23,6 +23,23 @@ app.use(cors());
 app.use(compression()); // Enable Gzip compression
 app.use(express.json());
 
+// Enforce HTTPS and www redirect in production
+app.use((req, res, next) => {
+    const host = req.headers.host || '';
+    const isProduction = process.env.NODE_ENV === 'production';
+
+    if (isProduction) {
+        const hasWww = host.startsWith('www.');
+        const isHttps = req.secure || req.headers['x-forwarded-proto'] === 'https';
+
+        if (!hasWww || !isHttps) {
+            const canonicalHost = hasWww ? host : `www.${host}`;
+            return res.redirect(301, `https://${canonicalHost}${req.originalUrl}`);
+        }
+    }
+    next();
+});
+
 // Serve static files from the React app build with caching
 app.use(express.static(path.join(__dirname, '../dist'), {
     maxAge: '1y',
